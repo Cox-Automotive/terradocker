@@ -2,7 +2,7 @@
 
 [`coxauto/terradocker`](https://hub.docker.com/r/coxauto/terradocker/)
 
-Run a special build of Terraform in a Docker container.
+Run Terraform in Docker with the [ALKS Provider](github.com/Cox-Automotive/terraform-provider-alks) installed.
 
 ## Running
 
