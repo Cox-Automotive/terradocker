@@ -3,6 +3,7 @@ MAINTAINER Brian Antonelli
 
 ENV TERRAFORM_VERSION=0.9.11
 ENV TF_ALKS_PROVIDER_VERSION=0.9.11
+ENV TERRAGRUNT_VERSION=v0.12.25
 
 RUN apt-get update && \
     apt-get install -y \
@@ -24,6 +25,9 @@ RUN wget -O tfalks.tar.gz https://github.com/Cox-Automotive/terraform-provider-a
     chmod a+x /usr/bin/terraform-provider-alks
 
 COPY .terraformrc /root/.terraformrc
+
+ADD https://github.com/gruntwork-io/terragrunt/releases/download/${TERRAGRUNT_VERSION}/terragrunt_linux_amd64 /bin/terragrunt
+RUN chmod +x /bin/terragrunt
 
 ENTRYPOINT ["terraform"]
 CMD ["version"]
