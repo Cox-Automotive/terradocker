@@ -2,7 +2,9 @@
 
 [`coxauto/terradocker`](https://hub.docker.com/r/coxauto/terradocker/)
 
-Run Terraform in Docker with the [ALKS Provider](github.com/Cox-Automotive/terraform-provider-alks) installed.
+Run Terraform in Docker with the [ALKS Provider](github.com/Cox-Automotive/terraform-provider-alks) installed. 
+
+[Terragrunt](https://github.com/gruntwork-io/terragrunt) is also available to you if you're running `docker.inside()` with Jenkins.
 
 ## Running
 
