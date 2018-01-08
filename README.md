@@ -30,5 +30,5 @@ docker run -it -v $(PWD):/work \
     -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
     -e AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN \
     --entrypoint terragrunt \
-    coxauto/terradocker version
+    coxauto/terradocker --version
 ```
