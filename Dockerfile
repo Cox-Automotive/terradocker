@@ -22,7 +22,7 @@ RUN wget -q -O /tmp/terraform.zip https://releases.hashicorp.com/terraform/${TER
 
 RUN wget -q -O tfalks.tar.gz https://github.com/Cox-Automotive/terraform-provider-alks/releases/download/${TF_ALKS_PROVIDER_VERSION}/terraform-provider-alks-linux-amd64.tar.gz && \
     tar -zxvf tfalks.tar.gz -C /usr/bin/ && \
-    chmod a+x /usr/bin/terraform-provider-alks
+    chmod a+x /usr/bin/terraform-provider-alks_v${TF_ALKS_PROVIDER_VERSION}
 
 COPY .terraformrc /root/.terraformrc
 
